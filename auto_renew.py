@@ -13,7 +13,7 @@ import re
 # 从环境变量读取登录凭据，默认使用PTERODACTYL_SESSION，账号密码作为备用方案，请在settings-actons里设置环境变量 
 EMAIL = os.getenv('EMAIL', '')        # 登录邮箱
 PASSWORD = os.getenv('PASSWORD', '')  # 登录密码
-SESSION_COOKIE = os.getenv('PTERODACTYL_SESSION', '')
+SESSION_COOKIE = os.getenv('PTERODACTYL_PANEL_SESSION', '')
 
 # Telegram Bot 通知配置（可选）
 TELEGRAM_BOT_TOKEN = os.getenv('TELEGRAM_BOT_TOKEN', '')
