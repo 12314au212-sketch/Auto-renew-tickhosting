@@ -118,7 +118,7 @@ def login_to_dashboard(driver):
         # try different email and password input selectors
         email_selectors = [
             (By.NAME, 'username'),  
-            (By.ID, 'email'),
+            (By.ID, 'text'),
             (By.NAME, 'email'),
             (By.XPATH, "//input[@type='text']"), #<input type="text" id="username" name="username" placeholder="name@example.com" value="">
         ]
