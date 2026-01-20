@@ -46,7 +46,17 @@ def add_cookies(driver):
             'name': 'pterodactyl_session',
             'value': os.environ['PTERODACTYL_SESSION'],
             'domain': '.tickhosting.com'
-        }
+        },
+        {
+            'name': 'pterodactyl_panel_session',
+            'value': os.environ['PTERODACTYL_PANEL_SESSION'],
+            'domain': '.tickhosting.com'
+        },
+        {
+            'name': 'PTERODACTYL_PANEL_SESSION',
+            'value': os.environ['PTERODACTYL_PANEL_SESSION'],
+            'domain': '.tickhosting.com'
+        },
     ]
     for cookie in cookies:
         try:
