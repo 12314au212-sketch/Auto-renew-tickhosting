@@ -120,7 +120,7 @@ def login_to_dashboard(driver):
             (By.NAME, 'username'),  
             (By.ID, 'email'),
             (By.NAME, 'email'),
-            (By.XPATH, "//input[@type='email']"),
+            (By.XPATH, "//input[@type='username']"),
         ]
         
         password_selectors = [
